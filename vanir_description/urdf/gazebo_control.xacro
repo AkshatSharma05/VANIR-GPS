@@ -138,4 +138,13 @@
 </sensor>
 </gazebo>
 
+<gazebo reference="gps_link">
+  <sensor name="navsat" type="navsat">
+    <always_on>1</always_on>
+    <update_rate>5</update_rate>
+    <topic>/gps/fix</topic>
+    <gz_frame_id>gps_link</gz_frame_id>
+  </sensor>
+</gazebo>
+
 </robot>
